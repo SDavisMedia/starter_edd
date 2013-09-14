@@ -1,0 +1,280 @@
+/*
+	Theme Name: Starter for Volatyl for Easy Digital Downloads
+	Theme URI: http://volatylthemes.com/starter-child-theme/
+	Author: Volatyl Themes
+	Author URI: http://volatylthemes.com/
+	Description: Starter child theme for Volatyl for Easy Digital Downloads
+	Template: volatyl_edd
+	Version: 2.0
+*/
+
+/*
+	The purpose of this starter child theme is to get you started
+	on the right track. While these styles are perfectly fine for 
+	a minimal website design, the main goal of this theme is to
+	show you how various Volatyl styles should be overwritten from
+	a child theme.
+	
+	For more information on creating child themes in Volatyl, visit
+	the documenation pages: http://volatylthemes.com/why-child-themes/
+*/
+
+
+/* formatting & styles */
+
+body,
+input,
+textarea, 
+.cancel-reply,
+.site-description {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; /* change general body font */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+.entry-title a,
+.widget h4,
+.edd-sidebar-price,
+.comments-title {
+	font-family: 'Open Sans', sans-serif; /* change headline/title font */
+	font-weight: bold;
+}
+
+input,
+textarea,
+.default-widget,
+.read-more,
+.header-menu-toggle .menu-toggle,
+pre,
+.note,
+.comments-content > ol > li.comment, 
+.comments-content > ol > li.pingback {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#container > .site-header {
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+
+#header-area, 
+.site-footer, 
+#container > .site-header, 
+#menu-area-standard, 
+#container .standard-menu-wrap, 
+.short-menu .menu li ul a, 
+.full-menu .menu li ul li a, 
+.post.sticky, 
+.sticky .entry-header, 
+.sticky .featured-img, 
+.comments-content > ol > li.comment, 
+.comments-content > ol > li.pingback, 
+.children > li > .comment, 
+.comment-avatar, 
+.wp-caption, 
+abbr, 
+acronym, 
+pre, 
+.form-allowed-tags, 
+.default-widget, 
+.paging-navigation, 
+.post, 
+.page.hentry, 
+.site-content li, 
+.edd_has_purchased, 
+.short-menu .menu > li:hover > ul, 
+.full-menu .menu li:hover > ul {
+	border-color: #eaeaea; /* change all Volatyl border colors at once */
+}
+
+.site-title {
+	font-size: 2em;
+}
+
+#menu-area-standard,
+#container .standard-menu-wrap {
+	background: none;
+	border: none;
+}
+
+.short-menu .menu > li:hover > ul, 
+.full-menu .menu li:hover > ul {
+	background: #fafafa;
+	border: 1px solid #eaeaea;
+	box-shadow: 4px 2px 10px rgba(0,0,0,.05);
+}
+
+.short-menu .menu li ul a:hover, 
+.full-menu .menu li ul li a:hover {
+	background: #015f8e;
+	color: #fff;
+}
+
+.short-menu .menu li ul a, 
+.full-menu .menu li ul li a {
+	font-size: .86667em;
+}
+
+.full-menu .menu li:hover ul li:hover ul {
+	left: 197px;
+	top: -1px;
+}
+
+.post {
+	margin-bottom: 1em;
+}
+
+.short-menu .menu li ul a, 
+.full-menu .menu li ul li a,
+.post,
+.post.sticky,
+.sticky .entry-header,
+.paging-navigation {
+	border: none;
+}
+
+.post.sticky,
+.sticky .entry-header, 
+.sticky .entry-content, 
+.sticky .entry-summary {
+	background: none;
+	padding: 0;
+}
+
+.sticky .entry-header {
+	margin-bottom: 1.33334em;
+}
+
+.widget.default-widget,
+#fat-footer .default-widget {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+cite.fn {
+	font-weight: normal;
+	font-style: italic;
+}
+
+input, 
+#comment {
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+.header-menu-toggle {
+	margin-bottom: 1em;
+}
+
+.menu-toggle {
+	text-decoration: none;
+}
+
+.read-more {
+	display: inline-block;
+}
+
+.read-more,
+.header-menu-toggle .menu-toggle,
+input[type="submit"] {
+	background: #015f8e;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 6px 10px;
+}
+
+.read-more:hover,
+input[type="submit"]:hover {
+	background: #054e72;
+}
+
+a, 
+.site-title a:hover, 
+.menu a:hover, 
+#content .entry-header a:hover {
+	color: #015f8e;
+}
+
+h1, 
+h2,
+.edd-sidebar-price { 
+	font-size: 1.6em; 
+	line-height: 1.4em; 
+}
+
+h3 { 
+	font-size: 1.4em; 
+	line-height: 1.41667em; 
+}
+
+/* structure & layout */
+
+.header-menu-wrap {
+	top: 1.2em;
+}
+
+
+/* responsive styles */
+
+@media screen and (max-width: 768px) {
+	
+	/* responsive menus */
+	
+	.short-menu, 
+	.full-menu {
+		background: #fff;
+		border: 1px solid #eaeaea;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	.short-menu .menu > li:hover > ul, 
+	.full-menu .menu li:hover > ul {
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+	
+	#standard-menu-wrap.full-menu, 
+	#footer-menu-wrap.full-menu {
+		background: rgba(0,0,0,.05);
+	}
+	
+	#header-menu-wrap.short-menu a, 
+	#standard-menu-wrap.full-menu .menu a, 
+	#footer-menu-wrap.full-menu .menu a {
+		border: none;
+	}
+	
+	.menu > li > a {
+		background: none;
+	}
+
+	.short-menu .menu li ul a, 
+	.full-menu .menu li ul li a {
+		font-size: 1em;
+	}
+
+	.short-menu .menu li ul a:hover, 
+	.full-menu .menu li ul li a:hover {
+		background: none;
+		color: #015f8e;
+	}
+	
+	.short-menu a:hover, 
+	.full-menu a:hover, 
+	.short-menu .menu li ul a:hover, 
+	.full-menu .menu li ul a:hover {
+		color: #015f8e;
+	}
+}
